@@ -25,7 +25,7 @@
   *Tim sort algorithm
   *hybrid sorting algorithm -> merge sort + insertion sort
   *worst complexity = o(NlogN)
-
+  # DECORATORS
   # Remove duplicate elements
 str=[1,2,3,4,5,5,4]
 l=[]
