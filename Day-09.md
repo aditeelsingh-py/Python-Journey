@@ -26,7 +26,7 @@
   *hybrid sorting algorithm -> merge sort + insertion sort
   *worst complexity = o(NlogN)
 
-  # 
+  # Remove duplicate elements
 str=[1,2,3,4,5,5,4]
 l=[]
 for i in str:
@@ -35,5 +35,8 @@ for i in str:
 print(l)
 
 OUTPUT- [1, 2, 3, 4, 5]
+# group words by length
+str="he is superman"
+words=str.
   
   
