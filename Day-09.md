@@ -37,6 +37,14 @@ print(l)
 OUTPUT- [1, 2, 3, 4, 5]
 # group words by length
 str="he is superman"
-words=str.
+words=str.split()
+d={}
+for in range(len(words)):
+ length=len(words[i])
+ if length not in d:
+  d[length]=[]
+  d[length].append(words[i])
+print(d)
+OUTPUT- {2: ['he', 'is'], 8: ['superman', 'abcdefgh']}
   
   
