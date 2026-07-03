@@ -12,3 +12,11 @@ class Dog(Animal):
     print("dog moves")
 d=Dog()
 d.move()
+
+# Bank Balance
+class Person:
+  def __init__(self,name,age,phone_number):
+    self.name=name
+    self.age=age
+    self.phone_number=number
+    
