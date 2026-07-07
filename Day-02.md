@@ -5,40 +5,35 @@
  
 
 CODE:- 
-_employeeName=input("enter name")
-_attendance=float(input("enter attendance percentage"))
-_performanceRating=float(input("enter performance rating"))
-if (( _attendance >75) and (_performanceRating>3.5)):
-  print(_employeeName, "is eligible for bonus")
-else:
-  print(_employeeName,"is not eligible for bonus")
 
-OUTPUT -1
-enter nameromio
-enter attendance percentage80
-enter performance rating5
-romio is eligible for bonus
+class Employee:
+  def __init__(self,name,attendance,rating):
+    self.name=name
+    self.attendance=attendance
+    self.rating=rating
+  def CheckBonus(self):
+    if self.attendance>90 and self.rating>8:
+      print(f"{self.name} is Eligible for bonus")
+    else: 
+      print("not eligible for bonus")
 
+emp=Employee("Aditee" ,95 ,9)
+emp.CheckBonus()
 
 # Q3 Create a program to check whether a given username and password match predefined credentials. 
 
 
-Username = 'aditee'
-Password = 2311
-newUsername = input("enter username")
-newPassword = input("enter password")
-if (Username == newUsername) and ( Password == newPassword):
-  print("access allowed")
-else:
-  print("access denied")
-
-
-OUTPUT -1
-enter usernameaditee
-enter password23
-access denied 
-OUTPUT -2
-enter usernameaditee
-enter password23
-access allowed
+class User:
+  def __init__(self,new_username, new_password):
+    self.new_username=new_username
+    self.new_password=new_password
+  def CheckPassword(self):
+    old_username=input("enetr username")
+    old_password=input("enter password")
+    if self.new_username == old_username and self.new_password == old_password:
+      print("Credentials matched")
+    else:
+      print("Credentials not matched")
+user=User("Aditee","diva")
+user.CheckPassword()
 
